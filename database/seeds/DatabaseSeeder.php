@@ -1,6 +1,11 @@
 <?php
 
+use App\Produk;
+use App\User;
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +16,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // factory(User::class,10)->create();
+        // factory(Produk::class,6)->create();
+        // factory(\App\Barang::class,10)->create();
+        // factory(\App\Pemasok::class,10)->create();
+        factory(\App\Pelanggan::class,10)->create();
+
     }
 }
