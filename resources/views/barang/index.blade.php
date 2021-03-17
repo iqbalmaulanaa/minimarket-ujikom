@@ -39,28 +39,28 @@
                         </tr>
                         </thead>
                         <tbody>
-                            @foreach ($barang as $row)
+                            @foreach ($barang as $row2)
                             <tr>
                                 <td>{{ !empty($i) ? ++$i : $i = 1 }}</th>
-                                <td>{{ $row->kode_barang }}</td>
-                                <td>{{ $row->produk->produk }}</td>
-                                <td>{{ $row->nama_barang }}</td>
-                                <td>{{ $row->satuan }}</td>
-                                <td>{{ $row->harga_jual }}</td>
-                                <td>{{ $row->stok }}</td>
+                                <td>{{ $row2->kode_barang }}</td>
+                                <td>{{ $row2->produk->produk }}</td>
+                                <td>{{ $row2->nama_barang }}</td>
+                                <td>{{ $row2->satuan }}</td>
+                                <td>{{ $row2->harga_jual }}</td>
+                                <td>{{ $row2->stok }}</td>
                                 <td>
                                     <a href="#" data-toggle="modal" data-target="#formModal" data-mode="edit"
-                                    data-id="{{$row->id}}"
-                                    data-produk="{{$row->produk_id}}"
-                                    data-nama="{{$row->nama_barang}}"
-                                    data-kode="{{$row->kode_barang}}"
-                                    data-satuan="{{$row->satuan}}"
-                                    data-harga="{{$row->harga_jual}}"
-                                    data-stok="{{$row->stok}}"
+                                    data-id="{{$row2->id}}"
+                                    data-produk="{{$row2->produk_id}}"
+                                    data-nama="{{$row2->nama_barang}}"
+                                    data-kode="{{$row2->kode_barang}}"
+                                    data-satuan="{{$row2->satuan}}"
+                                    data-harga="{{$row2->harga_jual}}"
+                                    data-stok="{{$row2->stok}}"
                                     class="btn btn-sm btn-warning"><i class='fa fa-edit'></i></a>
                                     <a href="#dlt" data-toggle="modal" data-target="#deleteModal"
-                                    data-id="{{$row->id}}"
-                                    data-nama="{{$row->nama_barang}}"
+                                    data-id="{{$row2->id}}"
+                                    data-nama="{{$row2->nama_barang}}"
                                     class="btn btn-sm btn-danger"><i class='fa fa-trash'></i></a>
                                 </td>
                             </tr>

@@ -17,3 +17,7 @@ Route::delete('pemasok','PemasokController@destroy');
 
 Route::put('pelanggan','PelangganController@update');
 Route::delete('pelanggan','PelangganController@destroy');
+
+Route::get('pembelian','PembelianController@index');
+
+

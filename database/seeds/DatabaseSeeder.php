@@ -20,7 +20,12 @@ class DatabaseSeeder extends Seeder
         // factory(Produk::class,6)->create();
         // factory(\App\Barang::class,10)->create();
         // factory(\App\Pemasok::class,10)->create();
-        factory(\App\Pelanggan::class,10)->create();
+        // factory(\App\Pelanggan::class,10)->create();
+        factory(\App\Penjualan::class,10)->create();
+        factory(\App\Pembelian::class,10)->create();
+        factory(\App\DetailPenjualan::class,10)->create();
+        factory(\App\DetailPembelian::class,10)->create();
+        factory(\App\TampungBayar::class,10)->create();
 
     }
 }
