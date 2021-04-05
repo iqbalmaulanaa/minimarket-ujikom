@@ -52,6 +52,8 @@
 <script src="{{asset('gent')}}/build/js/custom.min.js"></script>
 <script src="{{asset('gent')}}/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="{{asset('gent')}}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 @stack('script')
 
 </body>
