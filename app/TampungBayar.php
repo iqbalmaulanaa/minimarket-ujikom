@@ -8,5 +8,5 @@ class TampungBayar extends Model
 {
     public $primaryKey = 'id';
     protected $table = 'tampung_bayar';
-
+    protected $fillable = ['penjualan_id','total','terima','kembali'];
 }

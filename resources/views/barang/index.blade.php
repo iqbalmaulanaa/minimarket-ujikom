@@ -24,6 +24,7 @@
               <div class="clearfix"></div>
             </div>
             <div class="x_content">
+                @include('tmplt.feedback')
                 <div class="table-responsive">
                     <table class="table text-gray-800" id="dtprod" width="100%" cellspacing="0">
                         <thead>
